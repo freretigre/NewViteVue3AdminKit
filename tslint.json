@@ -1,0 +1,15 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "plugin:vue/vue3-recommended",
+        "prettier",
+        "prettier/vue"
+    ],
+    "jsRules": {},
+    "rules": {
+        "vue/no-unused-vars": "error",
+        "vue/no-multiple-template-root": "off"
+    },
+    "rulesDirectory": []
+}
