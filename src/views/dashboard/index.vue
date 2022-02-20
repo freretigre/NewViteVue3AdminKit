@@ -7,7 +7,16 @@
 </template>
 
 <script>
+import { onMounted } from "vue";
+import { useRouter } from "vue-router";
+
 export default {
-  name: 'Dashboard'
+  name: 'Dashboard',
+  setup(){
+    const router = useRouter();
+    onMounted(() => {
+      console.log("useRouter", router);
+    });
+  }
 }
 </script>
