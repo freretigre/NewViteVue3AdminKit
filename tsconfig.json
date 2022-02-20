@@ -9,8 +9,9 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,  // 当 build 打包报错的时候，要增加这个属性 接跳过检测
     "lib": ["esnext", "dom", "dom.iterable"],
-    "types": ["element-plus/global", "unplugging-element-plus", "vite/client", ".eslintrc"]
+    "types": ["element-plus/global", "vite/client"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }],

@@ -12,9 +12,11 @@ import { useRouter } from "vue-router";
 
 export default {
   name: 'Dashboard',
-  setup(){
+  setup(props, next){
     const router = useRouter();
     onMounted(() => {
+      console.log("props", props);
+      console.log("next", next);
       console.log("useRouter", router);
     });
   }
