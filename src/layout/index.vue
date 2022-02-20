@@ -21,11 +21,9 @@
 </template>
 
 <script setup lang="ts">
-
 import NavMenuSideBar from '@/components/NavMenuSideBar/index.vue';
 import NavMenuTopBar from '@/components/NavMenuTopBar/index.vue';
 import NavBreadcrumb from '@/components/NavBreadcrumb/index.vue';
-
 </script>
 
 <style lang="scss" scoped>

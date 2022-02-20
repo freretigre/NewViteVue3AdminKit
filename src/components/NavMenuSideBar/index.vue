@@ -42,16 +42,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
 import {
   Location,
   Document,
   Menu as IconMenu,
   Setting,
 } from '@element-plus/icons-vue'
-// defineProps<{ msg: string }>()
-
-// const count = ref(0)
+const handleOpen = (key: string, keyPath: string[]) => {
+  console.log(key, keyPath)
+}
+const handleClose = (key: string, keyPath: string[]) => {
+  console.log(key, keyPath)
+}
 </script>
 
 <style scoped>

@@ -1,4 +1,5 @@
 <template>
+
   <el-menu
       :default-active="activeIndex2"
       class="el-menu-demo"
@@ -28,14 +29,13 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-
-const activeIndex = ref('1')
+// const activeIndex = ref('1')
 const activeIndex2 = ref('1')
 const handleSelect = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import "./index.scss";
 </style>

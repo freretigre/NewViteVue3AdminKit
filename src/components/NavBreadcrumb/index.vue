@@ -11,6 +11,6 @@
 import { ArrowRight } from '@element-plus/icons-vue'
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import "./index.scss";
 </style>

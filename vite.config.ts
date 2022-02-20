@@ -29,6 +29,7 @@ export default defineConfig({
       },
       scss: {
         javascriptEnabled: true,  // scss 支持内联 JavaScript
+        // additionalData: "@import '@/styles/index.scss';" // 引入全局样式
       },
     },
   },
