@@ -1,15 +1,15 @@
 <template>
   <div class="app-wrapper">
     <div class="sidebar-container">
-      <NavigationMenuSideBar />
+      <NavMenuSideBar />
     </div>
     <div class="main-container">
       <div class="header">
         <div class="navbar">
-          <NavigationMenuTopBar />
+          <NavMenuTopBar />
         </div>
         <div class="tags-view">
-          <NavigationBreadcrumb />
+          <NavBreadcrumb />
         </div>
       </div>
       <div class="app-main">
@@ -22,9 +22,9 @@
 
 <script setup lang="ts">
 
-import NavigationMenuSideBar from '@/components/NavigationMenuSideBar/index.vue';
-import NavigationMenuTopBar from '@/components/NavigationMenuTopBar/index.vue';
-import NavigationBreadcrumb from '@/components/NavigationBreadcrumb/index.vue';
+import NavMenuSideBar from '@/components/NavMenuSideBar/index.vue';
+import NavMenuTopBar from '@/components/NavMenuTopBar/index.vue';
+import NavBreadcrumb from '@/components/NavBreadcrumb/index.vue';
 
 </script>
 

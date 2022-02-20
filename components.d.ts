@@ -13,9 +13,12 @@ declare module 'vue' {
     ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    NavBreadcrumb: typeof import('./src/components/NavBreadcrumb/index.vue')['default']
     NavigationBreadcrumb: typeof import('./src/components/NavigationBreadcrumb/index.vue')['default']
     NavigationMenuSideBar: typeof import('./src/components/NavigationMenuSideBar/index.vue')['default']
     NavigationMenuTopBar: typeof import('./src/components/NavigationMenuTopBar/index.vue')['default']
+    NavMenuSideBar: typeof import('./src/components/NavMenuSideBar/index.vue')['default']
+    NavMenuTopBar: typeof import('./src/components/NavMenuTopBar/index.vue')['default']
   }
 }
 
