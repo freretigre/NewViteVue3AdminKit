@@ -11,6 +11,7 @@
     "@types/node": "^17.0.18",
     "axios": "^0.26.0",
     "element-plus": "^2.0.2",
+    "normalize.css": "^8.0.1",
     "qs": "^6.10.3",
     "unplugin-element-plus": "^0.3.1",
     "vue": "^3.2.25",
