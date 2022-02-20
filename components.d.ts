@@ -5,7 +5,14 @@
 declare module 'vue' {
   export interface GlobalComponents {
     ElButton: typeof import('element-plus/es')['ElButton']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElMenu: typeof import('element-plus/es')['ElMenu']
+    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
+    ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
+    ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    NavigationMenuSideBar: typeof import('./src/components/NavigationMenuSideBar/index.vue')['default']
+    NavigationMenuTopBar: typeof import('./src/components/NavigationMenuTopBar/index.vue')['default']
   }
 }
 

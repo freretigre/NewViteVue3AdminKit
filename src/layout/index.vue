@@ -1,9 +1,13 @@
 <template>
   <div class="app-wrapper">
-    <div class="sidebar-container">sidebar</div>
+    <div class="sidebar-container">
+      <NavigationMenuSideBar />
+    </div>
     <div class="main-container">
       <div class="header">
-        <div class="navbar">navbar</div>
+        <div class="navbar">
+          <NavigationMenuTopBar />
+        </div>
         <div class="tags-view">tagsview</div>
       </div>
       <div class="app-main">
@@ -13,6 +17,13 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+
+import NavigationMenuSideBar from '../components/NavigationMenuSideBar/index.vue';
+import NavigationMenuTopBar from '../components/NavigationMenuTopBar/index.vue';
+
+</script>
 
 <style lang="scss" scoped>
 .app-wrapper {
@@ -26,7 +37,7 @@
     .header {
       background: cyan;
       .navbar {
-        height: 50px;
+        //height: 50px;
         background: #1890ff;
       }
       .tags-view {
