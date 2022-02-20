@@ -8,7 +8,9 @@
         <div class="navbar">
           <NavigationMenuTopBar />
         </div>
-        <div class="tags-view">tagsview</div>
+        <div class="tags-view">
+          <NavigationBreadcrumb />
+        </div>
       </div>
       <div class="app-main">
         <h2>app main</h2>
@@ -20,8 +22,9 @@
 
 <script setup lang="ts">
 
-import NavigationMenuSideBar from '../components/NavigationMenuSideBar/index.vue';
-import NavigationMenuTopBar from '../components/NavigationMenuTopBar/index.vue';
+import NavigationMenuSideBar from '@/components/NavigationMenuSideBar/index.vue';
+import NavigationMenuTopBar from '@/components/NavigationMenuTopBar/index.vue';
+import NavigationBreadcrumb from '@/components/NavigationBreadcrumb/index.vue';
 
 </script>
 
@@ -41,12 +44,22 @@ import NavigationMenuTopBar from '../components/NavigationMenuTopBar/index.vue';
         background: #1890ff;
       }
       .tags-view {
-        height: 34px;
-        background: #12efff;
+        //height: 34px;
+        background: #FFF;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+
+        .el-breadcrumb{
+          padding: 20px;
+        }
       }
     }
     .app-main {
       /* 50= navbar  50  如果有tagsview + 34  */
+      padding: 20px;
       min-height: calc(100vh - 84px);
       background: red;
     }

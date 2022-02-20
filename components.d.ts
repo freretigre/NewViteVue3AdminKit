@@ -4,6 +4,8 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ElBreadcrumb: typeof import('element-plus/es')['ElBreadcrumb']
+    ElBreadcrumbItem: typeof import('element-plus/es')['ElBreadcrumbItem']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElMenu: typeof import('element-plus/es')['ElMenu']
@@ -11,6 +13,7 @@ declare module 'vue' {
     ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    NavigationBreadcrumb: typeof import('./src/components/NavigationBreadcrumb/index.vue')['default']
     NavigationMenuSideBar: typeof import('./src/components/NavigationMenuSideBar/index.vue')['default']
     NavigationMenuTopBar: typeof import('./src/components/NavigationMenuTopBar/index.vue')['default']
   }
