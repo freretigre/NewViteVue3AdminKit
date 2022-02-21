@@ -5,7 +5,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     CarouselCon: typeof import('./src/components/CarouselCon/index.vue')['default']
-    Configi18n: typeof import('./src/components/Configi18n/index.vue')['default']
     ConfigI18n: typeof import('./src/components/ConfigI18n/index.vue')['default']
     ElBreadcrumb: typeof import('element-plus/es')['ElBreadcrumb']
     ElBreadcrumbItem: typeof import('element-plus/es')['ElBreadcrumbItem']
