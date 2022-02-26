@@ -5,6 +5,10 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import ElementPlus from 'unplugin-element-plus/vite'
+import ViteRequireContext from '@originjs/vite-plugin-require-context'
+// import viteSvgIcons from 'vite-plugin-svg-icons';
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+
 
 // 自定义打包的静态目录名称
 const mkdirName = 'static';
@@ -42,6 +46,15 @@ export default defineConfig({
         resolvers: [ElementPlusResolver()],
       }),
       ElementPlus(),
+      ViteRequireContext(
+          /* options */
+      ),
+    createSvgIconsPlugin({
+        // 中转路径在你的src里的svg存放文件 : https://github.com/vbenjs/vite-plugin-svg-icons/tree/main#readme
+        iconDirs: [resolve(process.cwd(), 'src/icons')],
+        symbolId: 'icon-[dir]-[name]',
+        customDomId: '__svg__icons__dom__',
+      }),
   ],
   server: {
     port: 8088, // 指定开发服务器端口。

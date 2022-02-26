@@ -29,6 +29,7 @@ declare module 'vue' {
     NavigationMenuTopBar: typeof import('./src/components/NavigationMenuTopBar/index.vue')['default']
     NavMenuSideBar: typeof import('./src/components/NavMenuSideBar/index.vue')['default']
     NavMenuTopBar: typeof import('./src/components/NavMenuTopBar/index.vue')['default']
+    SvgIcon: typeof import('./src/components/SvgIcon/index.vue')['default']
   }
 }
 
