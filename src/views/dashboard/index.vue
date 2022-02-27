@@ -7,6 +7,8 @@
     <CarouselCon />
 
     <SvgIcon name="cake"></SvgIcon>
+
+    <DatePickers />
   </div>
 </template>
 
