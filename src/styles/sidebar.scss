@@ -2,7 +2,12 @@
   .sidebar-container {
     width: $sideBarWidth !important;
     height: 100%;
-    background-color: pink;
+    background-color: #545c64;
+    overflow: hidden;
+    overflow-x: scroll;
+    .el-menu {
+      --el-menu-border-color: #545c64;
+    }
   }
 }
 

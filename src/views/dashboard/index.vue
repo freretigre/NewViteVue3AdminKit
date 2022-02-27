@@ -1,14 +1,9 @@
 <template>
   <div>
-    <h1>Dashboard page</h1>
-    <el-button type="primary">Primary</el-button>
-    <el-button type="success">Success</el-button>
-    <ConfigI18n />
     <CarouselCon />
-
-    <SvgIcon name="cake"></SvgIcon>
-
+    <ConfigI18n />
     <DatePickers />
+    <SvgIcon name="cake"></SvgIcon>
   </div>
 </template>
 

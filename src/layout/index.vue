@@ -13,7 +13,6 @@
         </div>
       </div>
       <div class="app-main">
-        <h2>app main</h2>
         <router-view></router-view>
       </div>
     </div>
@@ -28,13 +27,14 @@ import NavBreadcrumb from '@/components/NavBreadcrumb/index.vue';
 
 <style lang="scss" scoped>
 .app-wrapper {
-  display: flex;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 210px calc(100vw - 210px);
   height: 100%;
   .main-container {
     flex: 1;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     .header {
       background: cyan;
       .navbar {
@@ -42,8 +42,7 @@ import NavBreadcrumb from '@/components/NavBreadcrumb/index.vue';
         background: #1890ff;
       }
       .tags-view {
-        //height: 34px;
-        background: #FFF;
+        background: #eee;
         flex: 1;
         display: flex;
         flex-direction: row;
@@ -58,8 +57,10 @@ import NavBreadcrumb from '@/components/NavBreadcrumb/index.vue';
     .app-main {
       /* 50= navbar  50  如果有tagsview + 34  */
       padding: 20px;
-      min-height: calc(100vh - 84px);
-      background: red;
+      background: #FFF;
+      overflow: scroll;
+      position: relative;
+      height: calc(100vh - 133px);
     }
   }
 }

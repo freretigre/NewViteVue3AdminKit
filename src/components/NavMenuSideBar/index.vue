@@ -1,5 +1,5 @@
 <template>
-  <h5 class="mb-2">LOGO</h5>
+  <div class="logo"><span>LOGO</span></div>
   <el-menu
       active-text-color="#ffd04b"
       background-color="#545c64"
